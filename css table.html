@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gugi&family=Jua&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="all.min.js"></script>
+    <style>
+        #ariana {
+            font-family: 'Gugi', cursive;
+            color: rgb(224, 152, 164);
+            background-color: black;
+            padding: 20px;
+        }
+
+        .grande {
+            font-family: 'Jua', sans-serif;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 80%;
+        }
+
+        th,
+        td {
+            text-align: center;
+            height: 50px;
+            font-size: 35px;
+        }
+
+        tr:nth-child(even) {
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="ariana"><i class="fas fa-angle-double-right"></i>&nbsp;Table(테이블, 표)을 만들어 보자</h1>
+    <hr>
+    <!-- table>thead>tr>th*3>lorem1^^^tbdoy>tr*3>td*3>lorem1 -->
+    <div class="grande">
+        <table class="table table-striped table-hover table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>한식</th>
+                    <th>중식</th>
+                    <th>양식</th>
+                </tr>
+            </thead>
+            <tbdoy>
+                <tr>
+                    <td>비빔밥</td>
+                    <td>짜장면</td>
+                    <td>파스타</td>
+                </tr>
+                <tr>
+                    <td>김밥</td>
+                    <td>마라탕</td>
+                    <td>봉골레</td>
+                </tr>
+                <tr>
+                    <td>김치찌개</td>
+                    <td>탕수육</td>
+                    <td>루꼴라피자</td>
+                </tr>
+            </tbdoy>
+        </table>
+    </div>
+</body>
+
+</html>

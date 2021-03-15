@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gugi&family=Jua&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="all.min.js"></script>
+    <style>
+        #ariana {
+            font-family: 'Gugi', cursive;
+            color: rgb(224, 152, 164);
+            background-color: black;
+            padding: 20px;
+        }
+
+        .grande {
+            font-family: 'Jua', sans-serif;
+            width: 500px;
+            height: 500px;
+            border: 10px solid darkorange;
+            position: relative;
+
+        }
+        /* static */
+        .static-elem {
+            width: 300px;
+            height: 300px;
+            border: 5px solid red;
+            position: static;
+        }
+        /* relative */
+        .relative-elem {
+            width: 300px;
+            height: 300px;
+            border: 5px solid blue;
+            position: relative;
+            top: 250px;
+            left: 500px;
+        }
+        /* fixed */
+        .fixed-elem {
+            width: 300px;
+            height: 300px;
+            border: 5px solid yellow;
+            position: fixed;
+            top: 450px;
+            right: 200px;
+        }
+        /* sticky */
+        .sticky-elem {
+            width: 300px;
+            height: 300px;
+            border: 5px solid violet;
+            position: sticky;
+            top: 450px;
+            right: 500px;
+        }
+        /* absolute */
+        .absolute-elem {
+            width: 300px;
+            height: 300px;
+            border: 5px solid turquoise;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="ariana"><i class="fas fa-angle-double-right"></i>&nbsp;Position을 정해보자 - CSS로 위치 조정해보기</h1>
+    <!-- .grande>h2*5>p>lorem3 -->
+    <div class="grande">
+        <h2 class="static-elem">
+            <p>Static</p>
+        </h2>
+        <h2 class="relative-elem">
+            <p>Relative</p>
+        </h2>
+        <h2 class="fixed-elem">
+            <p>Fixed</p>
+        </h2>
+        <h2 class="absolute-elem">
+            <p>Absolute</p>
+        </h2>
+    </div>
+
+    <!-- p*3>lorem3^h2.sticky-elem+p*50>lorem3 -->
+    <p>Lorem, ipsum dolor.</p>
+    <p>Libero, provident incidunt!</p>
+    <p>Amet, explicabo maiores.</p>
+    <h2 style="font-family: 'Jua', sans-serif" class="sticky-elem">Sticky</h2>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Dolores, nobis ratione.</p>
+    <p>Dolor, voluptatum neque.</p>
+    <p>Odit, molestias? Repellat.</p>
+    <p>Saepe, fugit magni!</p>
+    <p>Quos, dolore. Laudantium!</p>
+    <p>Tempore, et esse.</p>
+    <p>Architecto, quod optio.</p>
+    <p>Quae, alias dignissimos.</p>
+    <p>Exercitationem, voluptatum dolore.</p>
+    <p>Sed, quo vel!</p>
+    <p>Amet, placeat? Quidem.</p>
+    <p>Voluptatibus, eos aut?</p>
+    <p>Assumenda, quaerat provident!</p>
+    <p>Esse, error ipsum?</p>
+    <p>Quia, voluptas non!</p>
+    <p>Temporibus, facilis excepturi!</p>
+    <p>Eos, consectetur optio.</p>
+    <p>Accusamus, cum nobis.</p>
+    <p>Aspernatur, eaque mollitia.</p>
+    <p>Quibusdam, doloribus ad!</p>
+    <p>Tempore, necessitatibus incidunt!</p>
+    <p>Corrupti, magni neque.</p>
+    <p>Quod, consectetur corrupti!</p>
+    <p>Facere, autem atque.</p>
+    <p>Temporibus, fugit vero?</p>
+    <p>Expedita, dolorem ea!</p>
+    <p>Doloremque, magni et!</p>
+    <p>Harum, voluptate optio.</p>
+    <p>Fuga, accusantium aperiam?</p>
+    <p>Suscipit, doloremque quaerat.</p>
+    <p>Quibusdam, atque animi?</p>
+    <p>Iste, aspernatur eos?</p>
+    <p>Ipsam, maiores deleniti.</p>
+    <p>Amet, laboriosam id?</p>
+    <p>Ut, natus incidunt.</p>
+    <p>Sunt, assumenda quisquam!</p>
+    <p>Sint, magnam itaque!</p>
+    <p>Beatae, consequuntur reiciendis.</p>
+    <p>Consequatur, rerum deleniti.</p>
+    <p>Quisquam, adipisci magnam.</p>
+    <p>Aspernatur, dolores excepturi?</p>
+    <p>Enim, provident iure.</p>
+    <p>Neque, cum sapiente.</p>
+    <p>Accusantium, tempore exercitationem?</p>
+    <p>Veniam, et doloribus.</p>
+    <p>Ipsum, atque commodi?</p>
+    <p>Accusamus, esse dolor.</p>
+    <p>Reiciendis, odio error?</p>
+    <p>Laboriosam, reiciendis unde.</p>
+
+
+</body>
+
+</html>
