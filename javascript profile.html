@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gugi&family=Jua&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script src="all.min.js"></script>
+
+    <style>
+        .profile-title {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Gugi', cursive;
+            color: rgb(224, 152, 164);
+            background-color: black;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .blackpink {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        label {
+            padding: 5px 5px;
+            display: flex;
+            align-items: center;
+            width: 100px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            align-items: center;
+            font-family: 'Jua', sans-serif;
+        }
+
+        #jisu2 {
+            font-family: 'Gugi', cursive;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 상단 제목 및 색상 변환 버튼 -->
+    <div class="profile-title">
+        <h1>자바스크립트로 프로필 작성해보기</h1>
+        <div>
+            <p id="jisu1"><button onclick="colorChange()" id="color1">Change the Color!</button></p>
+        </div>
+    </div>
+
+    <div class="blackpink">
+        <!-- 프로필 본문 - 이름 -->
+        <div><label for="name">이름</label>
+            <input type="text">
+            <input type="submit" id="submit1">
+        </div>
+        <br>
+
+        <div><label for="address">주소</label>
+            <input type="text">
+            <input type="submit" id="submit1">
+        </div>
+        <br>
+
+        <div><label for="phone">연락처</label>
+            <input type="text">
+            <input type="submit" id="submit1">
+        </div>
+        <br>
+
+        <div><label for="university">학교</label>
+            <input type="text">
+            <input type="submit" id="submit1">
+        </div>
+        <br>
+
+        <div><label for="workplace">직장</label>
+            <input type="text">
+            <input type="submit" id="submit1">
+        </div>
+    </div>
+
+    <div>
+        <p id="jisu2"><button onclick="colorChange()" id="color1">Change the Color!</button></p>
+    </div>
+
+    <script>
+
+        var origin = true;
+        document.getElementById('color1').onclick = colorChange;
+
+        function colorChange() {
+            if (origin) {
+                document.body.style.color = "black";
+                document.body.style.backgroundColor = "rgb(224, 152, 164)";
+                origin = false;
+            } else {
+                document.body.style.color = "rgb(224, 152, 164)";
+                document.body.style.backgroundColor = "black";
+                origin = true;
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
