@@ -1,4 +1,4 @@
-package this_is_java;
+package sec01;
 
 public class VariableScopeExample {
 
