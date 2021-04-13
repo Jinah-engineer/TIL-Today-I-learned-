@@ -1,0 +1,14 @@
+package chapter07.sec03.exam01_parent_constructor_call;
+
+public class People {
+	// field
+	public String name;
+	public String ssn;
+	
+	// constructor
+	public People(String name, String ssn) {
+		this.name = name;
+		this.ssn = ssn;
+		System.out.println("부모 객체 생성 완료");
+	}
+}

@@ -1,0 +1,15 @@
+package chapter07.sec05.exam01_final_method;
+
+public class Car {
+	// field
+	public int speed;
+	
+	public void speedUp() {
+		speed += 1;
+	}
+	
+	public final void stop() {
+		System.out.println("차를 멈춤");
+		speed = 0;
+	}
+}
