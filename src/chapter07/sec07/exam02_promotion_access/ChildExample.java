@@ -1,4 +1,4 @@
-package chapter07.sec07.exam02_promotioin_access;
+package chapter07.sec07.exam02_promotion_access;
 
 public class ChildExample {
 	public static void main(String[] args) {
