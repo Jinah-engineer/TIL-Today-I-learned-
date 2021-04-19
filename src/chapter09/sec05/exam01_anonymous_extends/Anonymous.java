@@ -1,0 +1,38 @@
+package chapter09.sec05.exam01_anonymous_extends;
+
+public class Anonymous {
+	// 부모 타입의 field 선언
+	Person field = new Person() {
+		String studentNo;
+		
+		void work() {
+			System.out.println("출근합니다.");
+		}
+		
+		void wake() {
+			System.out.println("6시에 일어납니다.");
+			work();
+		};
+	};
+	
+	void method1() {
+		Person localVar = new Person() {
+			String studentNo;
+			
+			void walk() {
+				System.out.println("산책합니다.");
+			}
+			
+			void wake() {
+				System.out.println("7시에 일어납니다.");
+				walk();
+			};
+		};
+		localVar.wake();
+	}
+	
+	
+	void method2(Person person) {
+		person.wake();
+	}
+}
